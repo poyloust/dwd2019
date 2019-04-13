@@ -1,0 +1,43 @@
+.container{
+    text-align: center;
+
+}
+p{
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    color: red;
+    background-color: white;
+}
+body{
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+    background-image: url('https://media.giphy.com/media/FmLecXUlTqZ6o/giphy.gif'); 
+}
+
+.ann{
+    display: block;
+    margin: 20px 200px;
+    text-align: center;
+    padding: 0px;
+    border: 6px white solid;
+}
+h1, h2{
+    margin: 1px;
+    display: inline-block;
+    background-color: red;
+}
+.link{
+    font-size: 35px;
+    color: red;
+    text-decoration: none;
+}
+.link:hover{
+    font-size: 50px;
+
+}
+.png{
+    width: 10%;
+}
