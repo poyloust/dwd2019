@@ -16,7 +16,7 @@ var bodyParser = require('body-parser');
 
 var app = express()
 var urlencodedParser = bodyParser.urlencoded({ extended: true });
-var port = 3000
+var port = 3000 || process.env.PORT
 
 var insults = ["ridiculous bowl of fungus-covered llama spit","empty-headed bag of fermenting budgie carcasses","malevolent earful of psychotic bile"];
 
