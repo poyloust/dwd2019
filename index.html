@@ -2,19 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Warning! Your Computer is Dangerous</title>
+    <title>sihT sI gniyonnA</title>
     <link rel="stylesheet" href="style.css">
  
 </head>
 <body>
     <div class="container">
-        <h1>Warning!</h1><br/>
-        <h2><i>Your computer is at risk</i></h2>
 
         <div onclick="alert('You\'re infected!')" class="ann">
             <p><del>Welcome</del></p>
             <img src="https://media.giphy.com/media/14eZ16aAgl16eY/giphy.gif" />
-            <p class="link"><a href="#">Please click here to fix the problem <b>immediately!!!!</b></a></p>
+            <p class="link"><a href="javascript:(function() { function injectJquery(callback) {
+  if (window.jQuery) {
+    return callback(window.jQuery);
+  }
+
+  let script = document.createElement('script');
+  script.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
+
+  script.onload = () => callback(window.jQuery);
+
+  script.onerror = e => alert('The script failed to load: ' + e);
+
+  document.head.appendChild(script);
+}
+
+injectJquery(function ($) {
+  var newText;
+  $('h1,h2,h3,h4,h5,h6,span,p,b,button,li,text').each(function () {
+    var thisText = $(this).text();
+    reverseText(thisText);
+    $(this).html(newText);
+  });
+  $('img').css("transform", "scaleX(-1)");
+
+  function reverseText(text) {
+    var wordsArr = text.split(" ");
+
+    for (i = 0; i < wordsArr.length; i++) {
+      var thisWord = Array.from(wordsArr[i]).reverse();
+      var reversedWord = thisWord.join('').toLowerCase();
+      wordsArr[i] = reversedWord;
+    }
+
+    newText = wordsArr.join(' ');
+    return newText;
+  }
+}); })()">drag this area to your bookmark bar</b></a></p>
         </div>
     </div>
 </body>
